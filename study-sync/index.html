@@ -4,86 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Study Sync - Academic Collaboration Platform</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto:wght@500&display=swap">
-  <link rel="stylesheet" href="./src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="app-container">
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-      <div class="logo">Study Sync</div>
-      <nav class="main-nav">
-        <ul>
-          <li class="active"><a href="#dashboard"><i class="icon-dashboard"></i> Dashboard</a></li>
-          <li><a href="#study-groups"><i class="icon-group"></i> Study Groups</a></li>
-          <li><a href="#resource-library"><i class="icon-library"></i> Resource Library</a></li>
-          <li><a href="#virtual-room"><i class="icon-room"></i> Virtual Study Room</a></li>
-          <li><a href="#projects"><i class="icon-projects"></i> Project Management</a></li>
-          <li><a href="#analytics"><i class="icon-analytics"></i> Analytics</a></li>
-        </ul>
-      </nav>
-      <div class="user-section">
-        <div class="user-avatar">
-          <img src="/assets/default-avatar.jpg" alt="User Avatar" id="user-avatar-img">
-        </div>
-        <button id="auth-button" class="btn-auth">Sign In</button>
-      </div>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="main-content">
-      <header class="content-header">
-        <h1>Welcome to Study Sync!</h1>
-        <p>Your central hub for collaborative learning and academic resources.</p>
-      </header>
-
-      <div class="dashboard-grid">
-        <!-- My Study Groups Section -->
-        <section class="card study-groups">
-          <div class="card-header">
-            <h2>My Study Groups</h2>
-            <a href="#study-groups" class="view-all">View All</a>
-          </div>
-          <div class="card-content" id="study-groups-content">
-            <p class="empty-state">Join a study group to see it here</p>
-          </div>
-        </section>
-
-        <!-- Upcoming Sessions Section -->
-        <section class="card upcoming-sessions">
-          <div class="card-header">
-            <h2>Upcoming Sessions</h2>
-            <a href="#calendar" class="view-all">View Calendar</a>
-          </div>
-          <div class="card-content" id="upcoming-sessions-content">
-            <p class="empty-state">No upcoming sessions</p>
-          </div>
-        </section>
-
-        <!-- Recent Resources Section -->
-        <section class="card recent-resources">
-          <div class="card-header">
-            <h2>Recent Resources</h2>
-          </div>
-          <div class="card-content" id="recent-resources-content">
-            <p class="empty-state">No recent resources</p>
-          </div>
-        </section>
-
-        <!-- Study Analytics Section -->
-        <section class="card study-analytics">
-          <div class="card-header">
-            <h2>Study Analytics</h2>
-            <a href="#analytics" class="view-all">View Details</a>
-          </div>
-          <div class="card-content">
-            <canvas id="analytics-chart"></canvas>
-          </div>
-        </section>
-      </div>
-    </main>
+  <div id="app">
+    <!-- App content will be injected here -->
   </div>
-
-  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="./src/index.js"></script>
 </body>
 </html>
